@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resource List Test</title>
+        <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+        <script src="../lib/polaris-vue.js"></script>
+        <link rel="stylesheet" href="../lib/polaris-vue.css"></link>
+    </head>
+    <body>
+        <div id="app">
+
+            <polaris-page title="Test Page"
+            :breadcrumbs="[{content: 'back', onAction: doSomething}]"
+            >
+
+                <polaris-button icon="enableSelection" @click="dosomething">Select Mode</polaris-button>
+                <polaris-card>
+                    <polaris-resource-list
+                        ref="list"
+                        :items="products"
+                        @on-selection-change="setSelectedItems"
+                    >
+                        <template slot="item" slot-scope="{item}">
+                            <polaris-resource-list-item
+                                :id="item.id"
+                                :url="item.url"
+                                :attribute-one="item.title"
+                                :media="{src: 'https://via.placeholder.com/50x50', alt: '', size: 'small'}"
+                                :checked="item.checked"
+                                :disabled="item.disabled"
+                                selectable
+                                select-mode
+                            >
+                            </polaris-resource-list-item>
+                        </template>
+                    </polaris-resource-list>
+                </polaris-card>
+
+                {{selectedItems}}
+
+                <polaris-button @click="selectAll">Select All</polaris-button>
+
+            </polaris-page>
+            <polaris-select
+                placeholder="Please select an option"
+                label="I currently set my product costs in Shopify"
+                :options="[
+                         {label: 'Yes', value: 1},
+                        {label: 'No', value: 0}
+                    ]"
+                v-model="value1"
+            ></polaris-select>
+
+            <polaris-select
+                placeholder="Please select an option"
+                label="I currently set Something"
+                :options="[
+                         {label: 'Yes', value: 1},
+                        {label: 'No', value: 0}
+                    ]"
+                v-model="value2"
+            ></polaris-select>
+
+
+
+
+        </div>
+
+        <script>
+            Vue.use(PolarisVue);
+
+            var root = new Vue({
+                el: '#app',
+                created(){
+                    console.log("Root View created");
+                    console.log(this.$refs);
+                },
+                methods: {
+                    dosomething: function(e){
+                        console.log(e);
+                        console.log(this);
+                        console.log(this.$refs.list.$children);
+                        /*for(let i in this.$refs.list.$children){
+                            var item = this.$refs.list.$children[i];
+                            item.selectMode = !item.selectMode;
+                        }*/
+                        this.selectMode = !this.selectMode
+
+                    },
+                    clickItem: function(e){
+                        e.checkValue = !e.checkValue
+
+                    },
+                    selectAll(){
+                        console.log("Select All");
+                        console.log(this.$refs);
+                        for (let i in this.$refs.list.$children){
+                            let item = this.$refs.list.$children[i]
+                            console.log(item);
+                            if (!item.disabled){
+                                item.checkValue = true;
+                            }
+                        }
+                    },
+                    setSelectedItems(value) {
+                        console.log(value);
+                        if(value.checkedValue){
+                            this.selectedItems.push(this.products[this.products.findIndex(item => item.id === value.id)])
+                        } else {
+                            this.selectedItems.splice(this.selectedItems.findIndex(item => item.id === value.id),1)
+                        }
+                    },
+                    doSomething: function(){
+                        console.log('done somethign in breadcrumb');
+                    }
+                },
+                data: {
+                    color: {},
+                    selectedItems : [],
+                    products: [
+                        {
+                            id: 245,
+                            title: 'Product 1',
+                            value: 1,
+                            disabled: true
+                        },
+                        {
+                            id: 300,
+                            title: 'Product 2',
+                            value: 667,
+                            url: 'https://google.com',
+                            checked: true,
+                        },
+                        {
+                            id: 6667,
+                            title: 'Product 4',
+                            value: 222,
+                        },
+                        {
+                            id: 897,
+                            title: 'Product 5',
+                            value: 344,
+                        },
+                    ],
+                    value1: '',
+                    value2: '',
+                    selectMode: false
+                },
+                computed: {}
+
+            });
+        </script>
+
+    </body>
+</html>
+<script>
+
+</script>
+<script>
+
+</script>
