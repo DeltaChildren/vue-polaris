@@ -1,15 +1,15 @@
 {
   "_args": [
     [
-      "github:sprawsm/vue-polaris",
+      "gitlab:sprawsm/vue-polaris",
       "D:\\Projects\\Delta Children\\Bundles\\shopify-bundles"
     ]
   ],
-  "_from": "github:sprawsm/vue-polaris",
+  "_from": "gitlab:sprawsm/vue-polaris",
   "_id": "@eastsideco/polaris-vue@github:Kyon147/polaris-vue#ab1f1bcc84102257882489d2102650121acc0c23",
   "_inBundle": false,
   "_integrity": "",
-  "_location": "/@eastsideco/polaris-vue",
+  "_location": "/@sprawsm/polaris-vue",
   "_phantomChildren": {
     "clone-deep": "2.0.2",
     "loader-utils": "1.4.0",
@@ -18,7 +18,7 @@
   },
   "_requested": {
     "type": "git",
-    "raw": "github:Kyon147/polaris-vue",
+    "raw": "gitlab:sprawsm/vue-polaris",
     "rawSpec": "github:Kyon147/polaris-vue",
     "saveSpec": "github:Kyon147/polaris-vue",
     "fetchSpec": null,
@@ -28,18 +28,16 @@
     "/"
   ],
   "_resolved": "github:Kyon147/polaris-vue#ab1f1bcc84102257882489d2102650121acc0c23",
-  "_spec": "github:Kyon147/polaris-vue",
+  "_spec": "gitlab:sprawsm/vue-polaris",
   "_where": "D:\\Projects\\Delta Children\\Bundles\\shopify-bundles",
   "author": {
-    "name": "ESC Apps Team",
-    "email": "support@appydesign.co.uk"
-  },
-  "bugs": {
-    "url": "https://github.com/EastsideCo/polaris-vue/issues"
+    "name": "Superawesome",
+    "email": "dudes@sprawsm.com"
   },
   "dependencies": {
     "change-case": "^3.1.0",
     "node-sass": "^4.14.1",
+    "raw-loader": "^4.0.2",
     "sass-loader": "^6.0.7"
   },
   "description": "Shopify Polaris for Vue 2",
@@ -51,17 +49,17 @@
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-preset-es2015": "6.24.1",
     "chai": "3.5.0",
-    "css-loader": "^0.28.11",
+    "css-loader": "^5.2.5",
     "eslint": "3.19.0",
     "eslint-loader": "1.7.1",
     "extract-text-webpack-plugin": "^3.0.2",
-    "mocha": "3.3.0",
+    "mocha": "^8.4.0",
     "style-loader": "^0.18.2",
     "svg-inline-loader": "^0.8.2",
     "vue-loader": "^13.7.3",
     "vue-template-compiler": "^2.6.12",
-    "webpack": "3.1.0",
-    "yargs": "7.1.0"
+    "webpack": "^5.37.1",
+    "yargs": "^17.0.1"
   },
   "homepage": "https://github.com/EastsideCo/polaris-vue#readme",
   "keywords": [],
