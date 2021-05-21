@@ -1,11 +1,11 @@
 {
   "_args": [
     [
-      "github:Kyon147/polaris-vue",
+      "github:sprawsm/vue-polaris",
       "D:\\Projects\\Delta Children\\Bundles\\shopify-bundles"
     ]
   ],
-  "_from": "github:Kyon147/polaris-vue",
+  "_from": "github:sprawsm/vue-polaris",
   "_id": "@eastsideco/polaris-vue@github:Kyon147/polaris-vue#ab1f1bcc84102257882489d2102650121acc0c23",
   "_inBundle": false,
   "_integrity": "",
@@ -67,10 +67,10 @@
   "keywords": [],
   "license": "MIT",
   "main": "lib/polaris-vue.min.js",
-  "name": "@eastsideco/polaris-vue",
+  "name": "@sprawsm/polaris-vue",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EastsideCo/polaris-vue.git"
+    "url": "gitlab:sprawsm/vue-polaris"
   },
   "scripts": {
     "build": "webpack --env build",
