@@ -6,7 +6,7 @@
     :preferred-position="preferredPosition"
     :activator-id="activatorId"
     @scrollout="handleScrollOut">
-    <template slot="overlay" scope="props">
+    <template slot="overlay" slot-scope="props">
         <slot name="overlay" :data="props"></slot>
     </template>
 </polaris-positioned-overlay>

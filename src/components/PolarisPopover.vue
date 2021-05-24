@@ -8,7 +8,7 @@
         :activator-id="activatorId"
         :preferred-position="preferredPosition"
         @close="onClose">
-        <template slot="overlay" scope="props">
+        <template slot="overlay" slot-scope="props">
             <div :class="classes" ref="content">
                 <div v-if="!props.data.measuring"
                      :style="{ left: props.data.tipPosition+'px' }"
