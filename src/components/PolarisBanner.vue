@@ -64,13 +64,13 @@ import PolarisHeading from './PolarisHeading.vue';
 import PolarisButton from './PolarisButton.vue';
 import PolarisButtonGroup from './PolarisButtonGroup.vue';
 
-import successIcon from '../resources/banner/circle-check-mark.svg';
-import fallbackIcon  from '../resources/banner/flag.svg';
-import warningIcon  from '../resources/banner/circle-alert.svg';
-import criticalIcon  from '../resources/banner/circle-barred.svg';
-import infoIcon  from '../resources/banner/circle-information.svg';
+import successIcon from '!!raw-loader!../resources/banner/circle-check-mark.svg';
+import fallbackIcon  from '!!raw-loader!../resources/banner/flag.svg';
+import warningIcon  from '!!raw-loader!../resources/banner/circle-alert.svg';
+import criticalIcon  from '!!raw-loader!../resources/banner/circle-barred.svg';
+import infoIcon  from '!!raw-loader!../resources/banner/circle-information.svg';
 
-import dismissIcon from '../resources/dismiss-icon.svg';
+import dismissIcon from '!!raw-loader!../resources/dismiss-icon.svg';
 
 export default {
     components: {
