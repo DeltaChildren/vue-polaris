@@ -2,6 +2,7 @@
 <div :class="classes">
     <polaris-page-header
         :title="title"
+        :subtitle="subtitle"
         :icon="icon"
         :breadcrumbs="breadcrumbs"
         :separator="separator"
@@ -29,6 +30,7 @@ export default {
             type: String,
             required: true,
         },
+        subtitle: String,
         icon: String,
         breadcrumbs: {
             type: Array,

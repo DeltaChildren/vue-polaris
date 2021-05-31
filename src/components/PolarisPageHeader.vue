@@ -22,6 +22,7 @@
                         element="h1">
                         {{ title }}
                     </polaris-display-text>
+                    <polaris-text-style>{{subtitle}}</polaris-text-style>
                 </div>
                 <div class="Polaris-Page__Actions">
                     <div class="Polaris-Page__PrimaryAction">
@@ -192,9 +193,19 @@ import PolarisActionList from './PolarisActionList.vue';
 import PolarisPopup from './PolarisPopover.vue';
 import PolarisPopover from './PolarisPopover.vue';
 import PolarisPageAction from './PolarisPageAction.vue';
+import PolarisTextStyle from "./PolarisTextStyle";
+import PolarisDisplayText from "./PolarisDisplayText";
+import PolarisPagination from "./PolarisPagination";
+import PolarisBreadcrumbs from "./PolarisBreadcrumbs";
+import PolarisButton from "./PolarisButton";
 
 export default {
     components: {
+        PolarisButton,
+        PolarisBreadcrumbs,
+        PolarisPagination,
+        PolarisDisplayText,
+        PolarisTextStyle,
         PolarisActionList,
         PolarisPopup,
         PolarisPopover,
@@ -202,6 +213,7 @@ export default {
     },
     props: {
         title: String,
+        subtitle: String,
         icon: String,
         separator: Boolean,
         breadcrumbs: {
