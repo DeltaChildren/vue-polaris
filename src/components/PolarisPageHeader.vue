@@ -22,7 +22,7 @@
                         element="h1">
                         {{ title }}
                     </polaris-display-text>
-                    <polaris-text-style>{{subtitle}}</polaris-text-style>
+                    <polaris-text-style variation="subdued">{{subtitle}}</polaris-text-style>
                 </div>
                 <div class="Polaris-Page__Actions">
                     <div class="Polaris-Page__PrimaryAction">
