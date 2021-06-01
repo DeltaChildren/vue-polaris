@@ -16,7 +16,7 @@
 <script>
 import PolarisUnstyledLink from './PolarisUnstyledLink.vue';
 import PolarisIcon from './PolarisIcon.vue';
-import chevronIcon from '../resources/chevron-icon.svg';
+import chevronIcon from '!!raw-loader!../resources/chevron-icon.svg';
 
 export default {
     props: {
