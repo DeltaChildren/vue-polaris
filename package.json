@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "change-case": "^3.1.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^6.0.1",
     "raw-loader": "^4.0.2",
     "sass-loader": "^6.0.7"
   },
