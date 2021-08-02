@@ -7,7 +7,7 @@
          tabindex="-1"
          @click="handleStep(1)">
         <div class="Polaris-TextField__SpinnerIcon">
-            <polaris-icon :source="caretUp">
+            <polaris-icon source="caretUp">
             </polaris-icon>
         </div>
     </div>
@@ -16,7 +16,7 @@
          tabindex="-1"
          @click="handleStep(-1)">
         <div class="Polaris-TextField__SpinnerIcon">
-            <polaris-icon :source="caretDown">
+            <polaris-icon source="caretDown">
             </polaris-icon>
         </div>
     </div>
@@ -25,9 +25,6 @@
 
 <script>
 import PolarisIcon from './PolarisIcon.vue';
-
-import caretUp from '../resources/caret-up.svg';
-import caretDown from '../resources/caret-down.svg';
 
 export default {
     components: {
