@@ -30,12 +30,6 @@ export default {
     components: {
         PolarisIcon,
     },
-    data() {
-        return {
-            caretUp: caretUp,
-            caretDown: caretDown
-        };
-    },
     methods: {
         onClick() {
             this.$emit('click');
