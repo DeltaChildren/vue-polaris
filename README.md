@@ -1,3 +1,3 @@
 To Install:
 
-npm install gitlab:sprawsm/vue-polaris
+npm install @DeltaChildren/vue-polaris
