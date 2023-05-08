@@ -1,15 +1,15 @@
 {
   "_args": [
     [
-      "gitlab:sprawsm/vue-polaris",
+      "github:DeltaChildren/vue-polaris",
       "D:\\Projects\\Delta Children\\Bundles\\shopify-bundles"
     ]
   ],
-  "_from": "gitlab:sprawsm/vue-polaris",
+  "_from": "github:DeltaChildren/vue-polaris",
   "_id": "@eastsideco/polaris-vue@github:Kyon147/polaris-vue#ab1f1bcc84102257882489d2102650121acc0c23",
   "_inBundle": false,
   "_integrity": "",
-  "_location": "/@sprawsm/polaris-vue",
+  "_location": "/@DeltaChildren/polaris-vue",
   "_phantomChildren": {
     "clone-deep": "2.0.2",
     "loader-utils": "1.4.0",
@@ -18,7 +18,7 @@
   },
   "_requested": {
     "type": "git",
-    "raw": "gitlab:sprawsm/vue-polaris",
+    "raw": "github:DeltaChildren/vue-polaris",
     "rawSpec": "github:Kyon147/polaris-vue",
     "saveSpec": "github:Kyon147/polaris-vue",
     "fetchSpec": null,
@@ -28,11 +28,11 @@
     "/"
   ],
   "_resolved": "github:Kyon147/polaris-vue#ab1f1bcc84102257882489d2102650121acc0c23",
-  "_spec": "gitlab:sprawsm/vue-polaris",
+  "_spec": "github:DeltaChildren/vue-polaris",
   "_where": "D:\\Projects\\Delta Children\\Bundles\\shopify-bundles",
   "author": {
-    "name": "Superawesome",
-    "email": "dudes@sprawsm.com"
+    "name": "DeltaChildren",
+    "email": ""
   },
   "dependencies": {
     "change-case": "^3.1.0",
@@ -65,10 +65,10 @@
   "keywords": [],
   "license": "MIT",
   "main": "lib/polaris-vue.min.js",
-  "name": "@sprawsm/polaris-vue",
+  "name": "@DeltaChildren/polaris-vue",
   "repository": {
     "type": "git",
-    "url": "gitlab:sprawsm/vue-polaris"
+    "url": "github:DeltaChildren/vue-polaris"
   },
   "scripts": {
     "build": "webpack --env build",
